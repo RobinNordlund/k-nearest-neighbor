@@ -2,3 +2,20 @@
 .Rhistory
 .RData
 .Ruserdata
+
+
+# Ta bort inputdata
+input/
+output/
+
+# Resultatfiler
+*.xlsx
+*.csv
+*.png
+*.jpg
+*.jpeg
+
+# Temporära filer
+Thumbs.db
+*.tmp
+*~
