@@ -19,3 +19,6 @@ output/
 Thumbs.db
 *.tmp
 *~
+
+# Test-filer
+test.R
