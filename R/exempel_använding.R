@@ -28,7 +28,7 @@ source(
 )
 
 # Ladda k-NN funktioner
-source(here("R", "funktioner_beräkningar.R"))
+source(here("R", "knn_funktioner.R"))
 
 # 2. DATA INLÄSNING ----
 # =============================================================================
@@ -160,10 +160,12 @@ karta_6400 <- skapa_knn_karta(
 # Beräkna isoleringsindex för att mäta segregationsnivå
 # Högre värden indikerar större segregation (homogenare områden)
 
+
 isolerings_index_2022 <- berakna_isoleringsindex(
   resultat_2022, 
   K_VALUES
 )
+
 
 # Visualisera isoleringsindex över olika k-nivåer
 p_index_2022 <- isolerings_index_2022 |> 
